@@ -25,7 +25,7 @@ function Entity:init(def)
     self.joints = {}
     -- create bodies from definitions
     for i = 1, #def.bodies do
-        local body_def = {world = def.world, parent = self, x = x_list[i], y = y_list[i], angle = angle_list[i]}
+        local body_def = {world = def.world, superior = self, x = x_list[i], y = y_list[i], angle = angle_list[i]}
         table.extend(body_def, def.bodies[i])
         table.insert(self.bodies, PhysBody(body_def))
     end

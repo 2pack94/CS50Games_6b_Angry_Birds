@@ -9,7 +9,7 @@ function PhysBody:init(def)
     -- ID to differentiate between bodies
     self.id = def.id
     -- reference to the Entity container class that can contain multiple PhysBody objects
-    self.parent = def.parent
+    self.superior = def.superior
 
     -- texture and quad information
     -- In this class implementation, every body can only have 1 texture
@@ -32,7 +32,7 @@ function PhysBody:init(def)
     -- texture scaling factor for each axis
     self.texture_scale_x, self.texture_scale_y = def.texture_scale_x or 1, def.texture_scale_y or 1
 
-    -- if is_remove = true, this object gets removed from the body table of the parent class
+    -- if is_remove = true, this object gets removed from the body table of the superior class
     self.is_remove = false
     -- if the body has health, takes damage and can be destroyed
     if def.health_stages then

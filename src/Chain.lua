@@ -14,7 +14,7 @@ function Chain:init(def)
     -- def.num_elements: Number of bodies that get chained together.
     -- def.world: Box2D World reference
 
-    -- definition that gets generated to instantiate the Entity child class
+    -- definition that gets generated to instantiate the Entity parent class
     local total_def = {}
     -- definition for the PhysBody objects (chain elements) of the Entity class
     local body_def = {}

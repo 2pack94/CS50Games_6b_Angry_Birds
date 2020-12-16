@@ -29,8 +29,8 @@ PSYSTEM_DEFS = {
 }
 
 -- Definitions used as input parameters for the Entity class instantiation.
--- More complex entities are handled by an additional parent class that inherits from Entity.
--- This parent class might handle the creation of the Entity definition by itself.
+-- More complex entities are handled by an additional child class that inherits from Entity.
+-- This child class might handle the creation of the Entity definition by itself.
 -- Information like spawn position and orientation are stored in level_defs.lua
 GAME_ELEMENT_DEFS = {
     -- The ground tile uses a chain shape instead of a rectangle shape.

@@ -124,7 +124,7 @@ function Level:init(def)
     end)
 
     -- contains all game entities subdivided into the categories objects, projectiles and enemies.
-    -- the table elements are objects from the Entity class (or parents of Entity).
+    -- the table elements are objects from the Entity class (or children of Entity).
     self.entities = {
         objects = {},
         projectiles = {},
