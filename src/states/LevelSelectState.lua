@@ -46,7 +46,7 @@ function LevelSelectState:update(dt)
         -- Shift back after modulo operation.
         self.selected_level = (self.selected_level - 2) % #self.select_boxes + 1
     elseif keyboardWasPressed('right') then
-        self.selected_level = (self.selected_level + 2) % #self.select_boxes + 1
+        self.selected_level = self.selected_level % #self.select_boxes + 1
     end
 
     -- check if mouse is hovering above a box or if clicked a box
